@@ -5,12 +5,6 @@ import java.sql.*;
 
 public class createSQLite {
 
-    public static void main(String[] args) {
-
-        crearTablas();
-
-
-    }
     public static void crearTablas() {
 
         Connection c = null;

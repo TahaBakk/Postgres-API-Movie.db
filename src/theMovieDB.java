@@ -13,6 +13,7 @@ import java.net.URL;
 public class theMovieDB {
 
     static Datos datos = new Datos();
+    static insertsSQLite inserts = new insertsSQLite();
 
     public static String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
@@ -28,20 +29,22 @@ public class theMovieDB {
         return result.toString();
     }
 
-    public static void main(String[] args){
+    public static void mainLlamadas(){
         String s = "";
         String api_key = "82f0ce609a809c8375dc4061e7526935";
 
-        //peliculasLlamada();
-        //actoresLlamada();
+        peliculasLlamada();
+        actoresLlamada();
         relacionLlamada();
 
 
     }
+
+
     public static void peliculasLlamada(){
         String s = "";
         String api_key = "82f0ce609a809c8375dc4061e7526935";
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 100; i++) {
             int peli = 600 +i;
             String film = String.valueOf(peli);
             String peticio = "https://api.themoviedb.org/3/movie/"+film+"?api_key="+api_key;
@@ -77,7 +80,7 @@ public class theMovieDB {
         String s = "";
         String api_key = "82f0ce609a809c8375dc4061e7526935";
 
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 100; i++) {
             int relaciones = 600 +i;
             String relacion = String.valueOf(relaciones);
 
@@ -99,17 +102,14 @@ public class theMovieDB {
         Object obj02 = JSONValue.parse(cadena);
         JSONObject arra02=(JSONObject)obj02;
 
+        //buscamos el dato que tenga lo que hay en parentesis ej:"id" y lo guardamos en la classe datos
         datos.setIdPelicula(arra02.get("id").toString());
         datos.setTitlePelicula(arra02.get("original_title").toString());
         datos.setFechaEstrena(arra02.get("release_date").toString());
 
-        //System.out.println(datos.getIdPelicula());
-        //System.out.println(datos.getTitlePelicula());
-        //System.out.println(datos.setFechaEstrena());
-
-        //FALTA LLAMAR A LOS INSERTS
+        //llamamos la classe insertsSQL y le pasamos los datos a insertar en la bbdd
+        inserts.insertPeliculas(datos.getIdPelicula(),datos.getTitlePelicula(), datos.getFechaEstrena());
     }
-
 
     public static void SJSActor (String cadena){
 
@@ -120,11 +120,10 @@ public class theMovieDB {
         datos.setNameActor(arra02.get("name").toString());
         datos.setDateBirthdayActor(arra02.get("birthday").toString());
 
-        //System.out.println(datos.getIdActor());
-        //System.out.println(datos.getNameActor());
-        //System.out.println(datos.getDateBirthdayActor());
+        inserts.insertActores(datos.getIdActor(),datos.getNameActor(), datos.getDateBirthdayActor());
 
-        //FALTA LLAMAR A LOS INSERTS
+
+
     }
 
     public static void SJSRelacion (String cadena){
@@ -143,39 +142,10 @@ public class theMovieDB {
             datos.setIdActorRelacion(arra04.get("id").toString());
             datos.setIdPersonajeRelacion(arra04.get("character").toString());
 
-            System.out.println(datos.getIdRelacion());
-            System.out.println(datos.getIdPeliculaRelacion());
-            System.out.println(datos.getIdActorRelacion());
-            System.out.println(datos.getIdPersonajeRelacion());
-
-
-
-
-            //FALTA LLAMAR A LOS INSERTS
+            inserts.insertRelacion(datos.getIdRelacion(),datos.getIdActorRelacion(), datos.getIdPeliculaRelacion(), datos.getIdPersonajeRelacion());
 
         }
     }
 
-
-
-
-
-
-
-
-   /* public static void SJC (String cadena){
-        Object obj02 =JSONValue.parse(cadena);
-        JSONObject arra02=(JSONObject)obj02;
-        JSONArray arra03 = (JSONArray)arra02.get("cast");
-
-
-        for (int i = 0; i < arra03.size(); i++) {
-
-            JSONObject jb= (JSONObject)arra03.get(i);
-            System.out.println(jb.get("character")+"<-->"+jb.get("name"));
-
-        }
-
-    }*/
 
 }
