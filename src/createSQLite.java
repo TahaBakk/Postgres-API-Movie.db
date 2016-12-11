@@ -11,46 +11,36 @@ public class createSQLite {
 
 
     }
-
-
     public static void crearTablas() {
 
         Connection c = null;
         Statement stmt = null;
-        Statement stmt2 = null;
-        Statement stmt3 = null;
 
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:test.db");
+            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
             System.out.println("Opened database successfully");
 
-           /* stmt = c.createStatement();
+            stmt = c.createStatement();
             String sql = "CREATE TABLE PELICULAS " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
                     " TITLE           CHAR(50)    NOT NULL, " +
-                    " DATA_ESTRENA            DATE     NOT NULL, " +
-                    " PERSONATGES        CHAR(255))";
-            stmt.executeUpdate(sql);
-            stmt.close();*/
+                    " DATA_ESTRENA            DATE     NOT NULL) ";
 
-            stmt2 = c.createStatement();
             String sql2 = "CREATE TABLE RELACION " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
                     " ID_ACTOR           INT   NOT NULL, " +
-                    " ID_PERSONAJE       INT   NOT NULL, " +
+                    " PERSONAJE       CHAR(100)   NOT NULL, " +
                     " ID_PELICULA        INT   NOT NULL) ";
-            stmt2.executeUpdate(sql2);
-            stmt2.close();
 
-            stmt3 = c.createStatement();
             String sql3 = "CREATE TABLE ACTORES " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
                     " NAME           CHAR(50)    NOT NULL, " +
                     " DATE_OF_BIRTHDAY          DATE     NOT NULL) ";
-            stmt3.executeUpdate(sql3);
-            stmt3.close();
 
+            stmt.executeUpdate(sql);
+            stmt.executeUpdate(sql2);
+            stmt.executeUpdate(sql3);
 
             stmt.close();
             c.close();
