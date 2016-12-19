@@ -11,8 +11,12 @@ public class insertsSQLite {
             Connection c = null;
 
             try {
-                Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+                //Class.forName("org.sqlite.JDBC");
+                //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+                Class.forName("org.postgresql.Driver");
+                c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
+                System.out.println("Opened database successfully");
+
                 String insert= "INSERT INTO PELICULAS" +
                         "(ID,TITLE,DATA_ESTRENA) VALUES" +
                         " (?,?,?);";
@@ -24,7 +28,7 @@ public class insertsSQLite {
                 preparedStatement.setString(3, dataEstrena);
 
                 preparedStatement.executeUpdate();
-
+                c.close();
 
             } catch (SQLException ex) {
                 System.err.println(ex.getMessage());
@@ -40,8 +44,12 @@ public class insertsSQLite {
             Connection c = null;
 
             try {
-                Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+                //Class.forName("org.sqlite.JDBC");
+                //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+                Class.forName("org.postgresql.Driver");
+                c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
+
+
                 String insert= "INSERT INTO ACTORES" +
                         "(ID,NAME,DATE_OF_BIRTHDAY) VALUES" +
                         " (?,?,?);";
@@ -53,7 +61,7 @@ public class insertsSQLite {
                 preparedStatement.setString(3, dateabirthday);
 
                 preparedStatement.executeUpdate();
-
+                c.close();
 
             } catch (SQLException ex) {
                 System.err.println(ex.getMessage());
@@ -61,6 +69,7 @@ public class insertsSQLite {
                 e.printStackTrace();
             }
         }
+
         System.out.println("El actor a sido añadido a la tabla actores de la BBDD");
     }
 
@@ -69,8 +78,11 @@ public class insertsSQLite {
             Connection c = null;
 
             try {
-                Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+                //Class.forName("org.sqlite.JDBC");
+                //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+                Class.forName("org.postgresql.Driver");
+                c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
+
                 String insert= "INSERT INTO RELACION" +
                         "(ID,ID_ACTOR,ID_PELICULA,PERSONAJE) VALUES" +
                         " (?,?,?,?);";
@@ -83,6 +95,7 @@ public class insertsSQLite {
                 preparedStatement.setString(4, personaje);
 
                 preparedStatement.executeUpdate();
+                c.close();
 
 
             } catch (SQLException ex) {

@@ -30,8 +30,6 @@ public class theMovieDB {
     }
 
     public static void mainLlamadas(){
-        String s = "";
-        String api_key = "82f0ce609a809c8375dc4061e7526935";
 
         peliculasLlamada();
         actoresLlamada();
@@ -44,7 +42,7 @@ public class theMovieDB {
     public static void peliculasLlamada(){
         String s = "";
         String api_key = "82f0ce609a809c8375dc4061e7526935";
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 20; i++) {
             int peli = 600 +i;
             String film = String.valueOf(peli);
             String peticio = "https://api.themoviedb.org/3/movie/"+film+"?api_key="+api_key;
@@ -61,7 +59,7 @@ public class theMovieDB {
     public static void actoresLlamada(){
         String s = "";
         String api_key = "82f0ce609a809c8375dc4061e7526935";
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 20; i++) {
             int actores = 600 +i;
             String actor = String.valueOf(actores);
 
@@ -80,7 +78,7 @@ public class theMovieDB {
         String s = "";
         String api_key = "82f0ce609a809c8375dc4061e7526935";
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 20; i++) {
             int relaciones = 600 +i;
             String relacion = String.valueOf(relaciones);
 
@@ -108,6 +106,7 @@ public class theMovieDB {
         datos.setFechaEstrena(arra02.get("release_date").toString());
 
         //llamamos la classe insertsSQL y le pasamos los datos a insertar en la bbdd
+        //System.out.println(datos.getIdPelicula()+"----"+datos.getTitlePelicula()+"------"+datos.getFechaEstrena());
         inserts.insertPeliculas(datos.getIdPelicula(),datos.getTitlePelicula(), datos.getFechaEstrena());
     }
 

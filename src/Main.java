@@ -16,11 +16,11 @@ public class Main {
             System.out.println("Seleccione una de la opciones siguientes");
             System.out.println("------------------------------------------------");
             System.out.println("1.Ver los actores");
-            System.out.println("2.Ver los peliculas");
-            System.out.println("3.Ver los relacion entre actores y personajes");
+            System.out.println("2.Ver las peliculas");
+            System.out.println("3.Ver la relacion entre actores y personajes");
             System.out.println("4.Ver los actores por el ID");
-            System.out.println("5.Ver los peliculas por el ID");
-            System.out.println("6.Ver los relacion entre actores y personajes por el ID");
+            System.out.println("5.Ver las peliculas por el ID");
+            System.out.println("6.Ver la relacion entre actores y personajes por el ID");
             System.out.println("7.Crear tablas en la BBDD (en caso de existir las tablas no hara nada)");
             System.out.println("8.Bajar las peliculas entre otros datos de la API y hacer los inserts en las tablas corespodientes en la BBDD)");
             System.out.println("9.Salir");

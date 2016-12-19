@@ -11,8 +11,11 @@ public class createSQLite {
         Statement stmt = null;
 
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            //Class.forName("org.sqlite.JDBC");
+            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
+
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();

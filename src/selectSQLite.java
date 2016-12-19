@@ -14,8 +14,10 @@ public class selectSQLite {
     Connection c = null;
     Statement stmt = null;
     try {
-        Class.forName("org.sqlite.JDBC");
-        c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+        //Class.forName("org.sqlite.JDBC");
+        //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+        Class.forName("org.postgresql.Driver");
+        c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
         c.setAutoCommit(false);
         System.out.println("Opened database successfully");
 
@@ -45,8 +47,10 @@ public class selectSQLite {
         Connection c = null;
         Statement stmt = null;
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            //Class.forName("org.sqlite.JDBC");
+            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
@@ -76,8 +80,10 @@ public class selectSQLite {
         Connection c = null;
         Statement stmt = null;
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            //Class.forName("org.sqlite.JDBC");
+            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
@@ -115,8 +121,10 @@ public class selectSQLite {
         Connection c = null;
         Statement stmt = null;
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            //Class.forName("org.sqlite.JDBC");
+            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
@@ -150,8 +158,10 @@ public class selectSQLite {
         Connection c = null;
         Statement stmt = null;
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            //Class.forName("org.sqlite.JDBC");
+            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
@@ -186,8 +196,10 @@ public class selectSQLite {
         Connection c = null;
         Statement stmt = null;
         try {
-            Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            //Class.forName("org.sqlite.JDBC");
+            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
+            Class.forName("org.postgresql.Driver");
+            c = DriverManager.getConnection("jdbc:postgresql://172.31.73.195:5432/postgres","taha", "taha");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 

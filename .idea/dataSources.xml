@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/movies.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - postgres@172.31.73.195" uuid="32309065-faac-4e7f-b67d-2eee3c9f1771">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://172.31.73.195:5432/postgres</jdbc-url>
+    </data-source>
   </component>
 </project>
