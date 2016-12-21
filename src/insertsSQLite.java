@@ -23,17 +23,15 @@ public class insertsSQLite {
 
                 PreparedStatement preparedStatement = c.prepareStatement(insert);
 
-                preparedStatement.setString(1, id);
+                preparedStatement.setInt(1, Integer.parseInt(id));
                 preparedStatement.setString(2, title);
                 preparedStatement.setString(3, dataEstrena);
 
                 preparedStatement.executeUpdate();
                 c.close();
 
-            } catch (SQLException ex) {
-                System.err.println(ex.getMessage());
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
+            } catch (SQLException ex) {/*System.err.println(ex.getMessage())*/;
+            } catch (ClassNotFoundException e) {/*e.printStackTrace();*/
             }
         }
         System.out.println("La pelicula a sido añadida a la tabla peliculas de la BBDD");
@@ -56,18 +54,15 @@ public class insertsSQLite {
 
                 PreparedStatement preparedStatement = c.prepareStatement(insert);
 
-                preparedStatement.setString(1, id);
+                preparedStatement.setInt(1, Integer.parseInt(id));
                 preparedStatement.setString(2, name);
                 preparedStatement.setString(3, dateabirthday);
 
                 preparedStatement.executeUpdate();
                 c.close();
 
-            } catch (SQLException ex) {
-                System.err.println(ex.getMessage());
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
+            } catch (SQLException ex) {/*System.err.println(ex.getMessage())*/;
+            } catch (ClassNotFoundException e) {/*e.printStackTrace();*/}
         }
 
         System.out.println("El actor a sido añadido a la tabla actores de la BBDD");
@@ -89,20 +84,17 @@ public class insertsSQLite {
 
                 PreparedStatement preparedStatement = c.prepareStatement(insert);
 
-                preparedStatement.setString(1, id);
-                preparedStatement.setString(2, idActor);
-                preparedStatement.setString(3, idPelicula);
+                preparedStatement.setInt(1, Integer.parseInt(id));
+                preparedStatement.setInt(2, Integer.parseInt(idActor));
+                preparedStatement.setInt(3, Integer.parseInt(idPelicula));
                 preparedStatement.setString(4, personaje);
 
                 preparedStatement.executeUpdate();
                 c.close();
 
 
-            } catch (SQLException ex) {
-                System.err.println(ex.getMessage());
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
+            } catch (SQLException ex) {/*System.err.println(ex.getMessage())*/;
+            } catch (ClassNotFoundException e) {/*e.printStackTrace();*/}
         }
         System.out.println("Los datos han sido añadidos a la tabla relacion de la BBDD");
     }

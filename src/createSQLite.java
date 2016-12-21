@@ -22,7 +22,7 @@ public class createSQLite {
             String sql = "CREATE TABLE PELICULAS " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
                     " TITLE           CHAR(50)    NOT NULL, " +
-                    " DATA_ESTRENA            DATE     NOT NULL) ";
+                    " DATA_ESTRENA            TEXT     NOT NULL) ";
 
             String sql2 = "CREATE TABLE RELACION " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
@@ -33,7 +33,7 @@ public class createSQLite {
             String sql3 = "CREATE TABLE ACTORES " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
                     " NAME           CHAR(50)    NOT NULL, " +
-                    " DATE_OF_BIRTHDAY          DATE     NOT NULL) ";
+                    " DATE_OF_BIRTHDAY          TEXT     NOT NULL) ";
 
             stmt.executeUpdate(sql);
             stmt.executeUpdate(sql2);

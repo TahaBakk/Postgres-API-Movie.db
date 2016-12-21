@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a44bc27-ac63-4d31-86ca-4b57f054a77b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postgresql-9.4.1212.jre6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_9_4_1212_jre6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/86998199-65a4-4b7c-8ce4-f2f753111769.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLite-API.iml" afterPath="$PROJECT_DIR$/SQLite-API.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/createSQLite.java" afterPath="$PROJECT_DIR$/src/createSQLite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/insertsSQLite.java" afterPath="$PROJECT_DIR$/src/insertsSQLite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/selectSQLite.java" afterPath="$PROJECT_DIR$/src/selectSQLite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/theMovieDB.java" afterPath="$PROJECT_DIR$/src/theMovieDB.java" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -48,6 +41,20 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PostgreSQL - postgres@172.31.73.195" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="actores" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -55,16 +62,18 @@
     <favorites_list name="SQLite-API" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="insertsSQLite.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="insertsSQLite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/insertsSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="106" column="82" selection-start-line="106" selection-start-column="82" selection-end-line="106" selection-end-column="82" />
+            <state relative-caret-position="306">
+              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
               <folding>
-                <marker date="1482162879157" expanded="true" signature="642:759" ph="INSERT INTO PELICULAS... " />
-                <marker date="1482162879157" expanded="true" signature="1873:1991" ph="INSERT INTO ACTORES... " />
-                <marker date="1482162879157" expanded="true" signature="3120:3250" ph="INSERT INTO RELACION... " />
+                <element signature="method#insertPeliculas#0;class#insertsSQLite#0" expanded="false" />
+                <element signature="method#insertRelacion#0;class#insertsSQLite#0" expanded="false" />
+                <marker date="1482341262850" expanded="true" signature="642:759" ph="INSERT INTO PELICULAS... " />
+                <marker date="1482341262850" expanded="true" signature="1862:1980" ph="INSERT INTO ACTORES... " />
+                <marker date="1482341262850" expanded="true" signature="3085:3215" ph="INSERT INTO RELACION... " />
               </folding>
             </state>
           </provider>
@@ -73,12 +82,13 @@
       <file leaf-file-name="createSQLite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+            <state relative-caret-position="80">
+              <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
               <folding>
-                <marker date="1482161645744" expanded="true" signature="619:832" ph="CREATE TABLE... PELICULAS" />
-                <marker date="1482161645744" expanded="true" signature="864:1129" ph="CREATE TABLE... RELACION" />
-                <marker date="1482161645744" expanded="true" signature="1161:1373" ph="CREATE TABLE... ACTORES" />
+                <marker date="1482338327579" expanded="true" signature="619:832" ph="CREATE TABLE... PELICULAS" />
+                <marker date="1482338327579" expanded="true" signature="864:1069" ph="CREATE TABLE... RELACION" />
+                <marker date="1482338327579" expanded="true" signature="864:1129" ph="CREATE TABLE... RELACION" />
+                <marker date="1482338327579" expanded="true" signature="1161:1373" ph="CREATE TABLE... ACTORES" />
               </folding>
             </state>
           </provider>
@@ -87,10 +97,9 @@
       <file leaf-file-name="selectSQLite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="193" column="46" selection-start-line="193" selection-start-column="46" selection-end-line="193" selection-end-column="46" />
+            <state relative-caret-position="323">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <element signature="method#selectActores#0;class#selectSQLite#0" expanded="false" />
                 <element signature="method#selectPeliculas#0;class#selectSQLite#0" expanded="false" />
                 <element signature="method#selectRelacion#0;class#selectSQLite#0" expanded="false" />
                 <element signature="method#selectActoresID#0;class#selectSQLite#0" expanded="false" />
@@ -110,13 +119,14 @@
       <file leaf-file-name="theMovieDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/theMovieDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
               <folding>
                 <element signature="method#getHTML#0;class#theMovieDB#0" expanded="false" />
                 <element signature="method#peliculasLlamada#0;class#theMovieDB#0" expanded="false" />
                 <element signature="method#actoresLlamada#0;class#theMovieDB#0" expanded="false" />
                 <element signature="method#relacionLlamada#0;class#theMovieDB#0" expanded="false" />
+                <element signature="method#SJSPeli#0;class#theMovieDB#0" expanded="false" />
                 <element signature="method#SJSActor#0;class#theMovieDB#0" expanded="false" />
                 <element signature="method#SJSRelacion#0;class#theMovieDB#0" expanded="false" />
               </folding>
@@ -124,27 +134,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32309065-faac-4e7f-b67d-2eee3c9f1771/console.sql">
+      <file leaf-file-name="Datos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Datos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postgres.public.actores" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/af59be38/32309065-faac-4e7f-b67d-2eee3c9f1771/postgres.public.actores">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -152,8 +147,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="324">
+              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -173,14 +168,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a846ca3-e6fa-43d3-860b-39735838ecda/console.sql" />
-        <option value="$PROJECT_DIR$/src/createSQLite.java" />
         <option value="$PROJECT_DIR$/src/selectSQLite.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/console.sql" />
-        <option value="$PROJECT_DIR$/src/insertsSQLite.java" />
         <option value="dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.relacion" />
-        <option value="$PROJECT_DIR$/src/theMovieDB.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/32309065-faac-4e7f-b67d-2eee3c9f1771/console.sql" />
+        <option value="$PROJECT_DIR$/src/Datos.java" />
+        <option value="$PROJECT_DIR$/src/createSQLite.java" />
+        <option value="$PROJECT_DIR$/src/theMovieDB.java" />
+        <option value="$PROJECT_DIR$/src/insertsSQLite.java" />
       </list>
     </option>
   </component>
@@ -191,9 +187,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
+    <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="961" />
+    <option name="width" value="1922" />
     <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -222,6 +218,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,7 +254,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,6 +536,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -764,6 +761,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -908,44 +911,81 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482160443120</updated>
-      <workItem from="1482160444351" duration="5888000" />
+      <workItem from="1482160444351" duration="6025000" />
+      <workItem from="1482333371178" duration="5472000" />
     </task>
+    <task id="LOCAL-00001" summary="ffffffffffffff">
+      <created>1482166546554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1482166546554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5888000" />
+    <option name="totallyTimeSpent" value="11497000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="27" width="961" height="1054" extended-state="4" />
-    <editor active="false" />
+    <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33773378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35643566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13529412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17165776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17165776" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16256684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -958,6 +998,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ffffffffffffff" />
+    <option name="LAST_COMMIT_MESSAGE" value="ffffffffffffff" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -969,118 +1013,29 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="https://github.com/CristianJRamirez/PostgressUbuntuBBDDMovie">
-      <provider selected="true" editor-type-id="httpFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Datos.java">
+    <entry file="file://$PROJECT_DIR$/src/insertsSQLite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a846ca3-e6fa-43d3-860b-39735838ecda/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.peliculas">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.relacion">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.actores">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b9a80955-71ce-47b4-ae6c-86ebf064f2e8/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b9a80955-71ce-47b4-ae6c-86ebf064f2e8/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="1908">
+          <caret line="106" column="82" selection-start-line="106" selection-start-column="82" selection-end-line="106" selection-end-column="82" />
+          <folding>
+            <element signature="method#insertPeliculas#0;class#insertsSQLite#0" expanded="false" />
+            <element signature="method#insertRelacion#0;class#insertsSQLite#0" expanded="false" />
+            <marker date="1482341262850" expanded="true" signature="642:759" ph="INSERT INTO PELICULAS... " />
+            <marker date="1482341262850" expanded="true" signature="1862:1980" ph="INSERT INTO ACTORES... " />
+            <marker date="1482341262850" expanded="true" signature="3085:3215" ph="INSERT INTO RELACION... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="576">
           <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
           <folding>
-            <marker date="1482161645744" expanded="true" signature="619:832" ph="CREATE TABLE... PELICULAS" />
-            <marker date="1482161645744" expanded="true" signature="864:1129" ph="CREATE TABLE... RELACION" />
-            <marker date="1482161645744" expanded="true" signature="1161:1373" ph="CREATE TABLE... ACTORES" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/insertsSQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="106" column="82" selection-start-line="106" selection-start-column="82" selection-end-line="106" selection-end-column="82" />
-          <folding>
-            <marker date="1482162879157" expanded="true" signature="642:759" ph="INSERT INTO PELICULAS... " />
-            <marker date="1482162879157" expanded="true" signature="1873:1991" ph="INSERT INTO ACTORES... " />
-            <marker date="1482162879157" expanded="true" signature="3120:3250" ph="INSERT INTO RELACION... " />
+            <marker date="1482338327579" expanded="true" signature="619:832" ph="CREATE TABLE... PELICULAS" />
+            <marker date="1482338327579" expanded="true" signature="864:1069" ph="CREATE TABLE... RELACION" />
+            <marker date="1482338327579" expanded="true" signature="864:1129" ph="CREATE TABLE... RELACION" />
+            <marker date="1482338327579" expanded="true" signature="1161:1373" ph="CREATE TABLE... ACTORES" />
           </folding>
         </state>
       </provider>
@@ -1090,7 +1045,6 @@
         <state relative-caret-position="396">
           <caret line="193" column="46" selection-start-line="193" selection-start-column="46" selection-end-line="193" selection-end-column="46" />
           <folding>
-            <element signature="method#selectActores#0;class#selectSQLite#0" expanded="false" />
             <element signature="method#selectPeliculas#0;class#selectSQLite#0" expanded="false" />
             <element signature="method#selectRelacion#0;class#selectSQLite#0" expanded="false" />
             <element signature="method#selectActoresID#0;class#selectSQLite#0" expanded="false" />
@@ -1115,6 +1069,7 @@
             <element signature="method#peliculasLlamada#0;class#theMovieDB#0" expanded="false" />
             <element signature="method#actoresLlamada#0;class#theMovieDB#0" expanded="false" />
             <element signature="method#relacionLlamada#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#SJSPeli#0;class#theMovieDB#0" expanded="false" />
             <element signature="method#SJSActor#0;class#theMovieDB#0" expanded="false" />
             <element signature="method#SJSRelacion#0;class#theMovieDB#0" expanded="false" />
           </folding>
@@ -1139,6 +1094,150 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://github.com/CristianJRamirez/PostgressUbuntuBBDDMovie">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0a846ca3-e6fa-43d3-860b-39735838ecda/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.peliculas" />
+    <entry file="dbDummy://dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.relacion" />
+    <entry file="dbDummy://dbtable:/af59be38/4eae43ba-48d6-4eb8-93e0-bf1620ea0cea/postgres.public.actores" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b9a80955-71ce-47b4-ae6c-86ebf064f2e8/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b9a80955-71ce-47b4-ae6c-86ebf064f2e8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32309065-faac-4e7f-b67d-2eee3c9f1771/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="method#selectPeliculas#0;class#selectSQLite#0" expanded="false" />
+            <element signature="method#selectRelacion#0;class#selectSQLite#0" expanded="false" />
+            <element signature="method#selectActoresID#0;class#selectSQLite#0" expanded="false" />
+            <element signature="method#selectRelacionID#0;class#selectSQLite#0" expanded="false" />
+            <element signature="method#selectPeliculasID#0;class#selectSQLite#0" expanded="false" />
+            <marker date="1482161645720" expanded="true" signature="761:782" ph="SELECT * FRO... ACTORES" />
+            <marker date="1482161645720" expanded="true" signature="2025:2048" ph="SELECT * FRO... PELICULAS" />
+            <marker date="1482161645720" expanded="true" signature="3351:3373" ph="SELECT * FRO... RELACION" />
+            <marker date="1482161645720" expanded="true" signature="4951:4972" ph="SELECT * FRO... ACTORES" />
+            <marker date="1482161645720" expanded="true" signature="6506:6528" ph="SELECT * FRO... RELACION" />
+            <marker date="1482161645720" expanded="true" signature="8100:8123" ph="SELECT * FRO... PELICULAS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/af59be38/32309065-faac-4e7f-b67d-2eee3c9f1771/postgres.public.actores">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Datos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theMovieDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+          <folding>
+            <element signature="method#getHTML#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#peliculasLlamada#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#actoresLlamada#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#relacionLlamada#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#SJSPeli#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#SJSActor#0;class#theMovieDB#0" expanded="false" />
+            <element signature="method#SJSRelacion#0;class#theMovieDB#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding>
+            <marker date="1482338327579" expanded="true" signature="619:832" ph="CREATE TABLE... PELICULAS" />
+            <marker date="1482338327579" expanded="true" signature="864:1069" ph="CREATE TABLE... RELACION" />
+            <marker date="1482338327579" expanded="true" signature="864:1129" ph="CREATE TABLE... RELACION" />
+            <marker date="1482338327579" expanded="true" signature="1161:1373" ph="CREATE TABLE... ACTORES" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/insertsSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+          <folding>
+            <element signature="method#insertPeliculas#0;class#insertsSQLite#0" expanded="false" />
+            <element signature="method#insertRelacion#0;class#insertsSQLite#0" expanded="false" />
+            <marker date="1482341262850" expanded="true" signature="642:759" ph="INSERT INTO PELICULAS... " />
+            <marker date="1482341262850" expanded="true" signature="1862:1980" ph="INSERT INTO ACTORES... " />
+            <marker date="1482341262850" expanded="true" signature="3085:3215" ph="INSERT INTO RELACION... " />
+          </folding>
         </state>
       </provider>
     </entry>
